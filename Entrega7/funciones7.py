@@ -1,5 +1,5 @@
 def pasar_a_segundos(tiempo):
-	""" Calcula los segundos.
+	""" Calcula los segundos (integer).
 	Dada una cadena del tipo:
 		"99:59:59" 		"""
 	horas=tiempo.split(":")[0]
@@ -8,4 +8,15 @@ def pasar_a_segundos(tiempo):
 
 	return horas*3600+minutos*60+segundos
 
-def calcular_coste
+def calcular_coste(segundos,tarifa):
+	""" Calcula el coste en centimos
+	(float). Dado unos segundos (entero) y
+	una tarifa (float)"""
+	return segundos*tarifa
+
+def convertir_a_euros(centimos):
+	""" Calcula el coste en Euros
+	(float). Dado unos segundos (entero) y
+	una tarifa (float)"""
+
+
