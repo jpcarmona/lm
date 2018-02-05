@@ -20,8 +20,19 @@ def convertir_a_euros(centimos):
 	(string). Dado unos centimos(entero)"""
 	eur=centimos//100
 	cent=centimos%100
-	euros=str(eur)+","+str(cent)
-	return euros
+	euros=str(eur)
+
+	if len(euros)>6:
+		euros=str(euros)[-9:-6]+"."+str(euros)[-6:-3]+"."+str(euros)[-3:]
+	elif len(euros)>3:
+		euros=str(euros)[-6:-3]+"."+str(euros)[-3:]
+
+	if cent==0:
+		return euros
+	elif len(str(cent))==1:
+		return euros+",0"+str(cent)
+
+	return euros+","+str(cent)
 
 
 

@@ -17,8 +17,9 @@ for llam in listallam:
 	centimos=calcular_coste(segundos,tarifa)
 	total+=centimos
 	euros=convertir_a_euros(centimos)
-	print("La llamada nº {} ha costado {} Euros".format(num,euros))
+	print("La llamada nº {} ha tenido un coste de {} Euros".format(num,euros))
 
+print("")
 totaleuros=convertir_a_euros(total)
 print("Las llamadas han tenido un coste total de {} Euros".format(totaleuros))
 
