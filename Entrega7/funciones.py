@@ -23,9 +23,9 @@ def convertir_a_euros(centimos):
 	euros=str(eur)
 
 	if len(euros)>6:
-		euros=str(euros)[-9:-6]+"."+str(euros)[-6:-3]+"."+str(euros)[-3:]
+		euros=euros[:-6]+"."+euros[-6:-3]+"."+euros[-3:]
 	elif len(euros)>3:
-		euros=str(euros)[-6:-3]+"."+str(euros)[-3:]
+		euros=euros[:-3]+"."+euros[-3:]
 
 	if cent==0:
 		return euros
