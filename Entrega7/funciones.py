@@ -10,9 +10,10 @@ def pasar_a_segundos(tiempo):
 
 def calcular_coste(segundos,tarifa):
 	""" Calcula el coste en centimos
-	(float). Dado unos segundos (entero) y
-	una tarifa (float)"""
-	return segundos*tarifa
+	(integer). Dado unos segundos (entero) y
+	una tarifa (integer)"""
+	centimos=segundos*tarifa
+	return centimos
 
 def convertir_a_euros(centimos):
 	""" Calcula el coste en Euros y centimos
