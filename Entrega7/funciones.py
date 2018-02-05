@@ -2,9 +2,9 @@ def pasar_a_segundos(tiempo):
 	""" Calcula los segundos (integer).
 	Dada una cadena del tipo:
 		"99:59:59" 		"""
-	horas=tiempo.split(":")[0]
-	minutos=tiempo.split(":")[1]
-	segundos=tiempo.split(":")[2]
+	horas=int(tiempo.split(":")[0])
+	minutos=int(tiempo.split(":")[1])
+	segundos=int(tiempo.split(":")[2])
 
 	return horas*3600+minutos*60+segundos
 
@@ -20,7 +20,7 @@ def convertir_a_euros(centimos):
 	(string). Dado unos centimos(entero)"""
 	eur=centimos//100
 	cent=centimos%100
-	euros="eur"+"."+"cent"
+	euros=str(eur)+","+str(cent)
 	return euros
 
 
