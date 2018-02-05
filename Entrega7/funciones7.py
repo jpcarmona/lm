@@ -15,8 +15,12 @@ def calcular_coste(segundos,tarifa):
 	return segundos*tarifa
 
 def convertir_a_euros(centimos):
-	""" Calcula el coste en Euros
-	(float). Dado unos segundos (entero) y
-	una tarifa (float)"""
+	""" Calcula el coste en Euros y centimos
+	(string). Dado unos centimos(entero)"""
+	eur=centimos//100
+	cent=centimos%100
+	euros="eur"+"."+"cent"
+	return euros
+
 
 
